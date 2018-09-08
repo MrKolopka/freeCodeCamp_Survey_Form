@@ -1,0 +1,112 @@
+/* required to get the size of my elements correctly */
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  background: url(https://i.pinimg.com/originals/7f/0d/16/7f0d169e2909a47a703eb4c8b097fcef.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-color: #232b2b; */
+}
+
+h1 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  background: -webkit-linear-gradient(top,#efd100 0,#e2a233 38%,#f0c328 60%,#fff1a3 86%,#ffe13e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  margin: auto;
+  margin-bottom: 8px;
+  width: 50%;
+  font-size: 20px;
+  padding: 5px 0px 5px 0px;
+  color: #f8b700;
+  text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+  width: 25%;
+  display: block;
+  margin: 5px auto;
+  background: #9f1600;
+  color: #f7b10a;
+  padding: 5px 2px 5px 2px;
+  border: 0px solid black;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+textarea {
+  margin-top: 5px;
+}
+
+.radios label, .checkboxes label {
+  font-size: 20px;
+  font-weight: ;
+}
+
+.container {
+  /* border: 2px solid black; */
+  border-radius: 8px;
+  width: 50%;
+  margin: auto;
+  color: #ebdec2;
+}
+
+.col-25 {
+  float: left;
+  width: 45%;
+  margin-top: 6px;
+  padding-bottom: 10px;
+}
+
+.col-75 {
+  float: left;
+  width: 55%;
+  padding-bottom: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#number {
+  width: 50px;
+}
+
+#dropdown {
+  width: 80px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}

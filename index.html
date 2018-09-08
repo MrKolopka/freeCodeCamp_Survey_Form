@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <link rel="icon" type="image/gif" href="https://juliantoker.files.wordpress.com/2014/12/wowquest.jpg" />
+    <title>WOW Survey Form</title>
+  </head>
+  <body>
+    <!-- Header (Survey title) -->
+    <h1 id="title">Survey Form - World Of Warcraft</h1>
+    <!-- Small description (description) -->
+    <p id="description">Let us know the content you enjoyed the most.</p>
+      <div class="container">
+        <form id="survey-form" class="" action="index.html" method="post">
+          <!-- Some real life stuff (name, email, age) -->
+          <!-- Name row -->
+          <div class="row">
+            <div class="col-25">
+              <label id="name-label" for="fullname">Name:</label>
+            </div>
+            <div class="col-75">
+              <input id="name" type="text" name="fullname" value="" placeholder="Anduin Wrynn" required>
+            </div>
+          </div>
+          <!-- Email row -->
+          <div class="row">
+            <div class="col-25">
+              <label id="email-label" for="email">E-mail address:</label>
+            </div>
+            <div class="col-75">
+              <input id="email" type="email" name="email" placeholder="anduinnwrynn@logosh.com" required>
+            </div>
+          </div>
+          <!-- Age row -->
+          <div class="row">
+            <div class="col-25">
+              <label id="number-label" for="age">Age:</label>
+            </div>
+            <div class="col-75">
+              <input id="number" type="number" name="age" value="" placeholder="21" min="14" max="99">
+            </div>
+          </div>
+          <!-- faction row -->
+          <div class="row">
+            <div class="col-25">
+              <label for="faction">Your allegiance:</label>
+            </div>
+            <div class="col-75">
+              <!--Choose your faction (dropdown) -->
+              <select id="dropdown" class="" name="faction">
+                <option value="alliance">Alliance</option>
+                <option value="horde">Horde</option>
+              </select><br>
+            </div>
+          </div>
+          <!--Choose one expansion (radio button) -->
+          <!-- expansion row -->
+          <div class="row">
+            <div class="col-25">
+              <label for="expansion">What is/was your favorite content?</label>
+            </div>
+            <div class="col-75">
+              <div class="radios">
+                <input id="bc" type="radio" name="expansion" value="bc">
+                <label for="bc">Classic
+                  <span>
+                    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/3/38/WoW_Icon_update.png?version=1111c7a114751c2ef92bfb6c647ebb4d">
+                  </span>
+                </label>
+              </div>
+              <div class="radios">
+                <input id="bc" type="radio" name="expansion" value="bc">
+                <label for="bc">The Burning Crusade
+                  <span>
+                    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/0/0e/Bc_icon.gif?version=e0e05a8de8bab540bc9fd2654e3c8d9e">
+                  </span>
+                </label>
+              </div>
+              <div class="radios">
+                <input id="wotlk" type="radio" name="expansion" value="wotlk">
+                <label for="wotlk">Wrath of the Lich King
+                  <span>
+                    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/c/c1/Wrath-Logo-Small.png?version=84e5a791bffdf51110f05374fd4640ad">
+                  </span>
+                </label>
+              </div>
+              <div class="radios">
+                <input id="cata" type="radio" name="expansion" value="cata">
+                <label for="cata">Cataclysm
+                  <span>
+                    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/e/ef/Cata-Logo-Small.png?version=4e22e69b68330cb449c058eb8d609ef2">
+                  </span>
+                </label>
+              </div>
+              <div class="radios">
+                <input id="pandaria" type="radio" name="expansion" value="mop">
+                <label for="pandaria">Mists of Pandaria
+                  <span>
+                    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/2/26/Mists-Logo-Small.png?version=118bf275186b1a0fbc6a4c136bc88031">
+                  </span>
+                </label>
+              </div>
+              <div class="radios">
+                <input id="draenor" type="radio" name="expansion" value="wod">
+                <label for="draenor">Warlords of Draenor
+                  <span>
+                    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/7/71/WoD-Logo-Small.png?version=1549782813928058404f16b3c3b4f01e">
+                  </span>
+                </label>
+              </div>
+              <div class="radios">
+                <input id="legion" type="radio" name="expansion" value="legion">
+                <label for="legion">Legion
+                  <span>
+                    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/f/fd/Legion-Logo-Small.png?version=48f808eae3e6798c5267047784121b38">
+                  </span>
+                </label>
+              </div>
+              <div class="radios">
+                <input id="bfa" type="radio" name="expansion" value="bfa">
+                <label for="bfa">Battle for Azeroth
+                  <span>
+                    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/c/c1/BattleForAzeroth-Logo-Small.png?version=7b35f8f4fa223b57a4ae69e55ea395ab">
+                  </span>
+                </label>
+              </div>
+          </div>
+          <!-- Choose your favorite enemy (checkboxes) -->
+          <!-- checkbox row -->
+          <div class="row">
+            <div class="col-25">
+              <label for="boss">What is/was your favorite encounter?</label>
+            </div>
+            <div class="col-75">
+                <div class="checkboxes">
+                  <input id="illidan" type="checkbox" name="boss" value="illidan">
+                  <label for="illidan">Kel'Thuzad</label>
+                </div>
+                <div class="checkboxes">
+                  <input id="lichking" type="checkbox" name="boss" value="lichking">
+                  <label for="lichking">Kil'jaeden</label>
+                </div>
+                <div class="checkboxes">
+                  <input id="deathwing" type="checkbox" name="boss" value="deathwing">
+                  <label for="deathwing">Lich King</label>
+                </div>
+                <div class="checkboxes">
+                  <input id="garrosh" type="checkbox" name="boss" value="garrosh">
+                  <label for="garrosh">Madness of Deathwing</label>
+                </div>
+                <div class="checkboxes">
+                  <input id="archimonde" type="checkbox" name="boss" value="archimonde">
+                  <label for="archimonde">Garrosh Hellscream</label>
+                </div>
+                <div class="checkboxes">
+                  <input id="argus" type="checkbox" name="boss" value="argus">
+                  <label for="argus">Archimonde</label>
+                </div>
+                <div class="checkboxes">
+                  <input id="argus" type="checkbox" name="boss" value="argus">
+                  <label for="argus">Argus the Unmaker</label>
+                </div>
+            </div>
+          </div>
+          <!-- Comments (textarea) -->
+          <!-- textarea row -->
+          <label for="comments">Please help us with your feedback:</label>
+          <div class="row">
+            <div>
+              <textarea name="comments" placeholder="I think the survey should ask..." rows="10" cols="80"></textarea>
+            </div>
+          </div>
+          <!-- Submit it (submit button) - Every form element goes above that button -->
+          <div id="subdiv">
+            <input id="submit" type="submit" name="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
