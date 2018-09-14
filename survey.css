@@ -11,7 +11,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background-color: #232b2b; */
+  background-color: #232b2b;
 }
 
 h1 {
@@ -42,7 +42,7 @@ input[type="text"], input[type="email"], input[type="number"], select, textarea 
 }
 
 input[type=submit] {
-  width: 25%;
+  width: 150px;
   display: block;
   margin: 5px auto;
   background: #9f1600;
